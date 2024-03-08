@@ -11,7 +11,7 @@ namespace LoginApp.Controllers
     public class LoginController : Controller
     {
         LoginDBEntities3 db = new LoginDBEntities3();
-        // GET: Login
+      
         public ActionResult Index()
         {
             return View();
@@ -45,7 +45,7 @@ namespace LoginApp.Controllers
                    Session["username"] = s.username;
                    return RedirectToAction("Index", "Home");
                 }
-           // 
+           
              }
             return View();
 
